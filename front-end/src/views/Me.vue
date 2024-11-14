@@ -1,7 +1,7 @@
 <template>
     <div>
-      <h1>About Profile</h1>
-      <p>Nguyen An Nhat Huy</p>
+      <h1>About</h1>
+      <p>My name is Nguyen An Nhat Huy and this is my web</p>
     </div>
   </template>
   
