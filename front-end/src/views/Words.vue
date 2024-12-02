@@ -25,8 +25,7 @@
           >
         </td>
         <td width="75" class="center aligned" @click.prevent="onDestroy(word._id)">
-          <a :href="`/words/${word._id}`">Destroy</a>
-        </td>
+          <a href="/words/${word._id}">Destroy</a></td>
       </tr>
     </table>
   </div>
@@ -44,13 +43,15 @@ export default {
   },
   methods: {
     async onDestroy(id) {
-      const sure = window.confirm("Are you sure?");
-      if (!sure) return;
-      await api.destroyWord(id);
-      this.flash("Word deleted", "success");
-      const newWords = this.words.filter((word) => word._id !== id);
-      this.words = newWords;
-    },
+    const sure = window.confirm('Are you sure?');
+    if (!sure) return;
+
+    await api.deleteWord(id);
+    this.flash('Word deleted successfully!', 'success');
+
+    const newWords = this.words.filter(word => word._id !== id);
+    this.words = newWords;   
+    }
   },
   async mounted() {
     this.words = await api.getWords();
