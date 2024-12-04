@@ -35,7 +35,7 @@
 import { api } from "../helpers/helpers";
 
 export default {
-  namme: "words",
+  name: "words",
   data() {
     return {
       words: [],
