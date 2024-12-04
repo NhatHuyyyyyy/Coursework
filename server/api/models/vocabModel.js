@@ -17,7 +17,7 @@ const VocabSchema = new Schema(
             required: 'Vietnamese word cannot be blank'
         },
     }, 
-    { coleection: 'vocab' }
+    { collection: 'vocab' }
 ); 
 
 module.exports = mongoose.model('Vocab', VocabSchema);
