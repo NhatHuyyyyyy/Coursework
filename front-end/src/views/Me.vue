@@ -13,7 +13,7 @@ export default {
     return {
       name: "Nguyen An Nhat Huy",
       
-      bio: "This is a coursework in Course 	Web Programming 2(COMP1842) ",
+      bio: "This is a coursework in Web Programming 2(COMP1842) ",
       email: "huynangcs220724@fpt.edu.vn"
     };
   }
